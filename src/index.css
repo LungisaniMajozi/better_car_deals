@@ -179,3 +179,25 @@ html {
   );
   z-index: -1;
 }
+
+/* src/index.css */
+[id] {
+  scroll-margin-top: 80px; /* Adjust to match navbar height */
+}
+
+/* Optional: Add subtle focus style */
+[id]:target {
+  animation: highlight 1s ease-out;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(59, 130, 246, 0.1);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
